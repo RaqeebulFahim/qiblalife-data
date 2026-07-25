@@ -1,0 +1,16 @@
+{
+  "version": 2.1,
+  "years": {
+    "2026": [
+      { "date": "2026-07-18", "en": "Raqeeb Labs",     "bn": "Raqeeb Labs",   "public": false  },
+      { "date": "2026-07-25", "en": "QiblaLife Release Date",     "bn": "কিবলালাইফ রিলিজ তারিখ",   "public": false  }
+    ],
+    "2027": [
+      { "date": "2027-01-15", "en": "Shab-e-Miraj",   "bn": "শবে মিরাজ",   "public": false },
+      { "date": "2027-02-01", "en": "Shab-e-Barat",    "bn": "শবে বরাত",    "public": true  },
+      { "date": "2027-03-11", "en": "Eid-ul-Fitr",     "bn": "ঈদুল ফিতর",   "public": true  },
+      { "date": "2027-03-12", "en": "Eid-ul-Fitr Holiday", "bn": "ঈদুল ফিতরের ছুটি", "public": true },
+      { "date": "2027-05-18", "en": "Eid-ul-Adha",     "bn": "ঈদুল আজহা",   "public": true  }
+    ]
+  }
+}
