@@ -239,7 +239,9 @@
 
       <h2>4. Optional Google Drive backup</h2>
       <p><strong>Backup is entirely optional.</strong> The app is fully functional without signing in, and nothing is backed up unless you turn backup on in Settings → Backup &amp; Restore.</p>
-      <p>If you choose to enable it, you sign in with your Google account (handled by Google's own account picker — we never see or store a password). The app then saves a backup of your habit data (prayer records, tasks, focus and sleep sessions, journal entries, dhikr counts, alarms, and notification history) into a <strong>hidden, app-private folder in your own Google Drive</strong>. This backup:</p>
+      <p>If you choose to enable it, you sign in with your Google account (handled by Google's own account picker — we never see or store a password). The app then saves a backup of your habit data (prayer records, tasks, focus and sleep sessions, journal entries, dhikr counts, alarms, and notification history) into a <strong>hidden, app-private folder in your own Google Drive</strong>.</p>
+      <p><strong>How often it runs.</strong> Connecting an account also switches on an <strong>automatic backup that runs once every 24 hours</strong>, so your copy doesn't quietly fall out of date. It only ever runs on Wi-Fi, it is skipped when your data hasn't changed since the last upload, and you can turn it off at any time with the "Automatic daily backup" switch in Settings → Backup &amp; Restore — the "Back up now" button then remains for manual backups. Nothing is uploaded before you connect an account, and nothing is uploaded after you disconnect. The three most recent backups are kept; older ones are deleted automatically.</p>
+      <p>This backup:</p>
       <ul>
         <li>is stored in <strong>your</strong> Google account's storage, not on our servers — we still operate no servers and cannot access your backups;</li>
         <li>uses the narrow <code>drive.appdata</code> permission, which <strong>cannot see, read, or modify the rest of your Drive</strong> — only the app's own hidden folder;</li>
@@ -345,14 +347,14 @@
           <li>কিবলালাইফ আপনার কোনো ব্যক্তিগত তথ্য <strong>সংগ্রহ, সংরক্ষণ বা বিক্রি করে না</strong> — আমাদের কোনো সার্ভারই নেই।</li>
           <li>আপনার সব তথ্য (নামাজ, কাজ, ডায়েরি, জিকির, আলার্ম) <strong>শুধু আপনার ফোনেই</strong> থাকে; অ্যাপ আনইনস্টল করলে সব মুছে যায়।</li>
           <li>লোকেশন শুধু ফোনের ভেতরে নামাজের সময় ও কিবলা হিসাবের জন্য ব্যবহৃত হয়; আবহাওয়া জানতে Open-Meteo-তে এবং (ম্যাপ থেকে অবস্থান বাছাই করলে) মানচিত্রের ছবির জন্য OpenStreetMap-এ স্থানাঙ্ক যায় — নাম-পরিচয় ছাড়া।</li>
-          <li><strong>ঐচ্ছিক</strong> গুগল ড্রাইভ ব্যাকআপ চালু করলে ডেটা <strong>আপনার নিজের</strong> ড্রাইভের গোপন ফোল্ডারে জমা হয় — আমাদের কাছে নয়; যেকোনো সময় মুছে ফেলা যায়।</li>
+          <li><strong>ঐচ্ছিক</strong> গুগল ড্রাইভ ব্যাকআপ চালু করলে ডেটা <strong>আপনার নিজের</strong> ড্রাইভের গোপন ফোল্ডারে জমা হয় — আমাদের কাছে নয়; যেকোনো সময় মুছে ফেলা যায়। চালু করলে প্রতি ২৪ ঘণ্টায় একবার (শুধু ওয়াই-ফাইতে) স্বয়ংক্রিয়ভাবে ব্যাকআপ হয়, যা সেটিংস থেকে বন্ধ করা যায়।</li>
           <li>কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকিং নেই, কোনো অ্যাকাউন্ট বাধ্যতামূলক নয়।</li>
         </ul>
       </div>
 
       <hr>
 
-      <footer class="note">QiblaLife — Raqeeb Labs. This policy applies to the QiblaLife Android application distributed via Google Play.</footer>
+      <footer class="note">QiblaLife — Raqeeb Labs. <br> This policy applies to the QiblaLife Android application distributed via Google Play.</footer>
     </main>
   </div>
 </body>
