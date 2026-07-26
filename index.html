@@ -203,7 +203,7 @@
       <ul>
         <li>We do <strong>not</strong> collect, store, sell, or share your personal data. We have <strong>no servers</strong> — there is nowhere for your data to go.</li>
         <li>Everything you record in the app (prayers, tasks, journal, dhikr counts, alarms, settings) stays <strong>on your device only</strong> — unless you turn on the <strong>optional Google Drive backup</strong>, which stores a copy in <em>your own</em> Google Drive (see section 4).</li>
-        <li>Your location is used <strong>on your device</strong> to calculate prayer times and the Qibla direction. The only time coordinates leave the device is a request to the <strong>Open-Meteo weather service</strong> to fetch your local weather — with nothing attached that identifies you.</li>
+        <li>Your location is used <strong>on your device</strong> to calculate prayer times and the Qibla direction. Coordinates leave the device in only two cases — a request to the <strong>Open-Meteo weather service</strong> for your local weather, and, if you open the map picker, requests to the <strong>OpenStreetMap tile servers</strong> for the map images — with nothing attached that identifies you.</li>
         <li>No ads. No analytics. No advertising ID. No account required (optional Google sign-in for backup only). No cookies.</li>
       </ul>
 
@@ -216,7 +216,8 @@
         <li>Qibla direction (bearing to the Kaaba)</li>
         <li>The sunrise/sunset monthly calendar</li>
       </ul>
-      <p><strong>Where it goes:</strong> Your latitude/longitude is sent <strong>only</strong> to the Open-Meteo weather API (<a href="https://open-meteo.com">https://open-meteo.com</a>) to retrieve the weather forecast and air quality for your area. The request contains coordinates only — no name, no ID, no account, no advertising identifier. We never receive or store your location ourselves.</p>
+      <p><strong>Where it goes:</strong> Your latitude/longitude is sent to the Open-Meteo weather API (<a href="https://open-meteo.com">https://open-meteo.com</a>) to retrieve the weather forecast and air quality for your area. The request contains coordinates only — no name, no ID, no account, no advertising identifier. We never receive or store your location ourselves.</p>
+      <p>If you choose the <strong>map picker</strong> to set your location manually, the map images are fetched from the OpenStreetMap tile servers (<a href="https://tile.openstreetmap.org">https://tile.openstreetmap.org</a>) as you pan and zoom. Those requests necessarily reveal the map area you are viewing, and carry the app's package name as the user-agent — OpenStreetMap requires this. They contain no account, no ID and no advertising identifier, and downloaded tiles are cached on your device. This happens only while the map picker is open; the rest of the app never contacts a map server. OpenStreetMap Foundation privacy policy: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></p>
       <p><strong>Location is optional.</strong> You can deny location permission and instead:</p>
       <ul>
         <li>pick a location manually on a map, or</li>
@@ -257,6 +258,7 @@
           </thead>
           <tbody>
             <tr><td><strong>Open-Meteo</strong> (api.open-meteo.com, air-quality-api.open-meteo.com)</td><td>Weather forecast &amp; air quality</td><td>Your coordinates only</td></tr>
+            <tr><td><strong>OpenStreetMap</strong> (tile.openstreetmap.org) — <em>only while the map picker is open</em></td><td>Map tiles for picking your location manually</td><td>The map area you are viewing, plus the app's package name as user-agent</td></tr>
             <tr><td><strong>jsDelivr CDN</strong> (cdn.jsdelivr.net)</td><td>Downloading Hadith books you request (e.g., Sahih al-Bukhari)</td><td>None — a static file is fetched</td></tr>
             <tr><td><strong>GitHub</strong> (raw.githubusercontent.com)</td><td>A small yearly holiday-dates file (moon-sighting corrections)</td><td>None — a static file is fetched</td></tr>
             <tr><td><strong>Google Drive API</strong> (googleapis.com) — <em>only if you enable backup</em></td><td>Uploading/restoring your backup to your own Drive</td><td>Your backup file, into your own account (section 4)</td></tr>
@@ -342,7 +344,7 @@
         <ul>
           <li>কিবলালাইফ আপনার কোনো ব্যক্তিগত তথ্য <strong>সংগ্রহ, সংরক্ষণ বা বিক্রি করে না</strong> — আমাদের কোনো সার্ভারই নেই।</li>
           <li>আপনার সব তথ্য (নামাজ, কাজ, ডায়েরি, জিকির, আলার্ম) <strong>শুধু আপনার ফোনেই</strong> থাকে; অ্যাপ আনইনস্টল করলে সব মুছে যায়।</li>
-          <li>লোকেশন শুধু ফোনের ভেতরে নামাজের সময় ও কিবলা হিসাবের জন্য ব্যবহৃত হয়; শুধুমাত্র আবহাওয়া জানতে Open-Meteo-তে স্থানাঙ্ক পাঠানো হয় — নাম-পরিচয় ছাড়া।</li>
+          <li>লোকেশন শুধু ফোনের ভেতরে নামাজের সময় ও কিবলা হিসাবের জন্য ব্যবহৃত হয়; আবহাওয়া জানতে Open-Meteo-তে এবং (ম্যাপ থেকে অবস্থান বাছাই করলে) মানচিত্রের ছবির জন্য OpenStreetMap-এ স্থানাঙ্ক যায় — নাম-পরিচয় ছাড়া।</li>
           <li><strong>ঐচ্ছিক</strong> গুগল ড্রাইভ ব্যাকআপ চালু করলে ডেটা <strong>আপনার নিজের</strong> ড্রাইভের গোপন ফোল্ডারে জমা হয় — আমাদের কাছে নয়; যেকোনো সময় মুছে ফেলা যায়।</li>
           <li>কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকিং নেই, কোনো অ্যাকাউন্ট বাধ্যতামূলক নয়।</li>
         </ul>
